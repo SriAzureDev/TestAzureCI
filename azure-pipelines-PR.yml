@@ -29,11 +29,6 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: ResharperCli@2
-  inputs:
-    solutionOrProjectPath: 'TestAzureCI/TestAzureCI.csproj'
-    failBuildLevelSelector: 'Warning'
-    
 - task: VSTest@2
   inputs:
     platform: '$(buildPlatform)'
